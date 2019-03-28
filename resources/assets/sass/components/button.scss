@@ -1,0 +1,55 @@
+.button {
+  transition: $transitionBase;
+  @extend .aligner;
+  text-decoration: none !important;
+  margin: 10px 0;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  &.small {
+    font-size: 14px;
+    padding: 5px 15px;
+    height: 35px;
+    font-weight: 600;
+    min-width: 110px;
+  }
+  &.medium {
+    font-size: 20px;
+    padding: 5px 15px;
+    height: 40px;
+    font-weight: 600;
+    min-width: 130px;
+    line-height: 1.5;
+  }
+  &.large {
+    font-size: 24px;
+    padding: 5px 20px;
+    height: 45px;
+    font-weight: 600;
+    min-width: 150px;
+    line-height: 1.5;
+  }
+
+  &.service-button {
+    background: $baseColor;
+    color: #FFF;
+    &:hover {
+      background: lighten( $baseColor, 2% );
+    }
+  }
+
+  &.play-button{
+    background: $green;
+    color: #FFF;
+    &:hover {
+      background: lighten( $green, 2% );
+    }
+  }
+
+  &.pause-button{
+    background: $red;
+    color: #FFF;
+    &:hover {
+      background: lighten( $red, 2% );
+    }
+  }}
